@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>liquidacion de empeados</title>
+    <title>Foro Plataformas</title>
 
     <meta name="theme-color" content="#F49D15" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,64 +12,82 @@
     />
 
     <link rel="stylesheet" type="text/css" href="./assets/css/estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="empleados.css" />
   </head>
-  <body>
-    <h1>Sistema de empleados</h1>
+  <body class="container bg-light">
+    <h1 class="text-center">Foro Plataformas</h1>
     <section class="container">
       <article>
-        <h2>Datos personales</h2>
+        <h2>Datos Personales</h2>
+        <img class="rounded img-thumbnail" src="perfil.jpg" width="200" />
         <form id="registro_persona">
-          <button type="menu">
-            <img src="perfil.jpg" width="60" />
-          </button>
           <br /><br />
           <label>Cédula</label>
-          <input name="cedula" type="text" />
+          <input class="form-control" name="cedula" type="text" />
           <br /><br />
           <label>Nombres</label>
-          <input name="nombre" type="text" />
+          <input class="form-control" name="nombre" type="text" />
           <br /><br />
           <label>Apellidos</label>
-          <input name="apellido" type="text" />
+          <input class="form-control" name="apellido" type="text" />
           <br /><br />
-          <label>Género</label>
-          <select name="genero">
-            <option disabled selected hidden></option>
-            <option value="Femenino">Femenino</option>
-            <option value="Masculino">Masculino</option>
-          </select>
+          <div class="form-group">
+            <label>Género</label>
+            <select class="form-control" name="genero">
+              <option disabled selected hidden></option>
+              <option value="Femenino">Femenino</option>
+              <option value="Masculino">Masculino</option>
+            </select>
+          </div>
           <br /><br />
           <label>Fecha de nacimiento</label>
-          <input name="fecha_nacimiento" type="date" class="form-control" />
+          <input
+            class="form-control"
+            name="fecha_nacimiento"
+            type="date"
+            class="form-control"
+          />
           <br /><br />
           <label class="date">Fecha de ingreso</label>
-          <input name="fecha_ingreso" type="date" class="form-control" />
+          <input
+            class="form-control"
+            name="fecha_ingreso"
+            type="date"
+            class="form-control"
+          />
           <br /><br />
           <label>salario</label>
-          <input name="salario" type="number" />
-          <button type="submit">Enviar</button>
+          <input class="form-control" name="salario" type="number" />
+          <button class="btn btn-primary" type="submit">Guardar</button>
         </form>
         <hr />
 
         <form id="calculo">
           <h2>Calculos</h2>
           <label>Cédula</label>
-          <input name="cedula" type="text" />
-          <br /><br />
-          <button type="submit">Calcular</button>
+          <input class="form-control" name="cedula" type="text" />
+          <button class="btn btn-primary" type="submit">Calcular</button>
         </form>
-        <hr />
       </article>
     </section>
 
     <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="./assets/js/crud/insert.js"></script>
     <script
       type="text/javascript"

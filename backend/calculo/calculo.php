@@ -42,7 +42,7 @@ if (validarKeyArray($arrayDatos, $_POST)) {
 
             echo json_encode($response);
         } else {
-            echo json_encode(['response' => 'ERROR']);
+            echo json_encode(['response' => 'SIN RESULTADOS']);
         }
     } else {
         echo json_encode(['response' => 'VACIO']);

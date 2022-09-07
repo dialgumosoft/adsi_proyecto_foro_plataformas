@@ -52,6 +52,14 @@ let carga2 = setInterval(() => {
                 );
                 break;
 
+              case "SIN RESULTADOS":
+                ui.notificacion(
+                  "Información",
+                  "No existen datos para esa cédula.",
+                  "informacion"
+                );
+                break;
+
               case "ERROR":
                 ui.notificacion(
                   "Información",
